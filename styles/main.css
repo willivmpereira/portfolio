@@ -1,0 +1,696 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+:root{
+    --primary-color: #FEEF00;
+    --secondary-color: #3F4040;
+}
+
+h1,h2,h3,h4,h5,p{
+    font-family: 'Noto Sans', sans-serif;
+}
+p{
+  font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+.form-control:focus{
+    border-color: var(--secondary-color);
+    box-shadow: 0px 3px 6px #343a401a;
+}
+textarea.form-control{
+    max-height: 100px;
+}
+
+
+
+
+.navbar-b {
+    transition: all .5s ease-in-out;
+    background-color: transparent;
+    padding-top: 1.563rem;
+    padding-bottom: 1.563rem;
+  }
+  
+  .navbar-b.navbar-reduce {
+    box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.06);
+  }
+  
+  .navbar-b.navbar-trans .nav-item,
+  .navbar-b.navbar-reduce .nav-item {
+    position: relative;
+    padding-right: 10px;
+    padding-left: 0;
+  }
+  
+  .navbar-b.navbar-trans .nav-link,
+  .navbar-b.navbar-reduce .nav-link {
+    color: #fff;
+    text-transform: uppercase;
+  }
+  
+  .navbar-b.navbar-trans .nav-link:before,
+  .navbar-b.navbar-reduce .nav-link:before {
+    content: '';
+    position: absolute;
+    margin-left: 0px;
+    width: 0%;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    transition: all 500ms ease;
+  }
+  
+  .navbar-b.navbar-trans .nav-link:hover,
+  .navbar-b.navbar-reduce .nav-link:hover {
+    color: #1B1B1B;
+  }
+  
+  .navbar-b.navbar-trans .nav-link:hover:before,
+  .navbar-b.navbar-reduce .nav-link:hover:before {
+    width: 35px;
+  }
+  
+  .navbar-b.navbar-trans .show > .nav-link:before,
+  .navbar-b.navbar-trans .active > .nav-link:before,
+  .navbar-b.navbar-trans .nav-link.show:before,
+  .navbar-b.navbar-trans .nav-link.active:before,
+  .navbar-b.navbar-reduce .show > .nav-link:before,
+  .navbar-b.navbar-reduce .active > .nav-link:before,
+  .navbar-b.navbar-reduce .nav-link.show:before,
+  .navbar-b.navbar-reduce .nav-link.active:before {
+    width: 35px;
+  }
+  
+  .navbar-b.navbar-trans .nav-link:before {
+    background-color: #fff;
+  }
+  
+  .navbar-b.navbar-trans .nav-link:hover {
+    color: #fff;
+  }
+  
+  .navbar-b.navbar-trans .show > .nav-link,
+  .navbar-b.navbar-trans .active > .nav-link,
+  .navbar-b.navbar-trans .nav-link.show,
+  .navbar-b.navbar-trans .nav-link.active {
+    color: #fff;
+  }
+  
+  .navbar-b.navbar-reduce {
+    transition: all .5s ease-in-out;
+    background-color: white;
+    /* padding-top: 15px;
+    padding-bottom: 15px; */
+    padding-top: 0;
+    padding-bottom: 8px;
+  }
+  
+  .navbar-b.navbar-reduce .nav-link {
+    color: #000;
+  }
+  
+  .navbar-b.navbar-reduce .nav-link:before {
+    background-color: #000;
+  }
+  
+  .navbar-b.navbar-reduce .nav-link:hover {
+    color: #000;
+  }
+  
+  .navbar-b.navbar-reduce .show > .nav-link,
+  .navbar-b.navbar-reduce .active > .nav-link,
+  .navbar-b.navbar-reduce .nav-link.show,
+  .navbar-b.navbar-reduce .nav-link.active {
+    color: #000;
+  }
+  
+  .navbar-b.navbar-reduce .navbar-brand {
+    color: #000;
+  }
+  
+  .navbar-b.navbar-reduce .navbar-toggler span {
+    background-color: #1B1B1B;
+  }
+  
+  .navbar-b .navbar-brand img{
+    max-height: 43px;
+  }
+  
+  .navbar-b .navbar-nav .dropdown-item.show .dropdown-menu,
+  .navbar-b .dropdown.show .dropdown-menu,
+  .navbar-b .dropdown-btn.show .dropdown-menu {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    transform: translate3d(0px, 0px, 0px);
+    visibility: visible !important;
+  }
+  
+  .navbar-b .dropdown-menu {
+    margin: 1.12rem 0 0;
+    border-radius: 0;
+  }
+  
+  .navbar-b .dropdown-menu .dropdown-item {
+    padding: .7rem 1.7rem;
+    transition: all 500ms ease;
+  }
+  
+  .navbar-b .dropdown-menu .dropdown-item:hover {
+    background-color: #0078ff;
+    color: #fff;
+    transition: all 500ms ease;
+  }
+  
+  .navbar-b .dropdown-menu .dropdown-item.active {
+    background-color: #0078ff;
+  }
+  
+  /*--/ Hamburger Navbar /--*/
+  
+  .navbar-toggler {
+    position: relative;
+  }
+  
+  .navbar-toggler:focus,
+  .navbar-toggler:active {
+    outline: 0;
+  }
+  
+  .navbar-toggler span {
+    display: block;
+    background-color: #fff;
+    height: 3px;
+    width: 25px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    left: 0;
+    opacity: 1;
+  }
+  
+  .navbar-toggler span:nth-child(1),
+  .navbar-toggler span:nth-child(3) {
+    transition: -webkit-transform .35s ease-in-out;
+    transition: transform .35s ease-in-out;
+    transition: transform .35s ease-in-out, -webkit-transform .35s ease-in-out;
+  }
+  
+  .navbar-toggler:not(.collapsed) span:nth-child(1) {
+    position: absolute;
+    left: 12px;
+    top: 10px;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+    opacity: 0.9;
+  }
+  
+  .navbar-toggler:not(.collapsed) span:nth-child(2) {
+    height: 12px;
+    visibility: hidden;
+    background-color: transparent;
+  }
+  
+  .navbar-toggler:not(.collapsed) span:nth-child(3) {
+    position: absolute;
+    left: 12px;
+    top: 10px;
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    opacity: 0.9;
+  }
+  @media (min-width: 768px){
+.navbar-b.navbar-trans .nav-link:before, .navbar-b.navbar-reduce .nav-link:before {
+    margin-left: 10px;
+}}
+
+header .header{
+    background-image: url(../assets/background-header.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .header .content h1{
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+}
+header .header .content a{
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 8px 36px;
+    font-size: 20px;
+    margin-top: 18px;
+    border: none;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+section.quem-somos{
+    padding: 10rem 0;
+}
+section.quem-somos h2{
+    font-size: 16px;
+    opacity: 0.7;
+    text-transform: uppercase;
+}
+section.quem-somos img{
+    max-height: 250px;
+}
+section.quem-somos h4{
+    font-size: 1.8rem
+}
+section.quem-somos p{
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: 0.8;
+}
+section.banner{
+  padding: 10rem 0;
+  background-image: url(../assets/background-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+section.banner .container .col-md-8{
+  margin: 0 auto;
+}
+section.banner h2{
+  text-align: center;
+  font-weight: 800;
+  color: white;
+}
+section.banner p{
+  text-align: center;
+  color: white;
+  line-height: 25px;
+}
+section.servicos{
+  padding: 5rem 0;
+  background: #F6F6F6;
+  position: relative;
+}
+section.servicos::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 595px;
+  height: 660px;
+  background: url(../assets/bg-shape-left.png) left center no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+section.servicos::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: rgba(254, 237, 0, 0.301);
+  opacity: .5;
+  position: absolute;
+  bottom: 80px;
+  right: 0px;
+}
+section.servicos h2{
+    text-transform: uppercase;
+    opacity: 0.7;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+section.servicos span{
+    font-weight: 800;
+    color: var(--secondary-color);
+    font-size: 24px;
+    transition: all 0.3s ease 0s;
+    background: var(--primary-color);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    display: inline-block;
+}
+section.servicos img{
+  max-height: 30px;
+}
+section.servicos h4{
+    margin-top: 1.3rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+section.servicos p{
+  opacity: 0.8;
+  font-size: 1em;
+}
+section.portfolio{
+  padding: 5rem 0;
+}
+section.portfolio h2{
+    text-transform: uppercase;
+    opacity: 0.7;
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+section.clientes{
+  padding: 5rem 0;
+}
+section.clientes h2{
+  text-align: center;
+  color: var(--secondary-color);
+  font-weight: 700;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+section.contato{
+    background: #F6F6F6;
+    padding: 5rem 0;
+}
+section.contato h2{
+    text-transform: uppercase;
+    opacity: 0.7;
+    font-size: 1.7rem;
+}
+section.contato form{
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+section.contato form input{
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+}
+section.contato form input::placeholder{
+    font-size: 14px;
+}
+section.contato form button{
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    font-weight: bold;
+    padding: 4px 20px;
+}
+section.contato span{
+  font-weight: 500;
+}
+section.contato a{
+  color: var(--secondary-color)
+}
+section.contato a:hover{
+  color: #585858;
+}
+form button:hover{
+    background: #ccc340;
+}
+footer{
+    background: #D6D6D6;
+}
+footer img{
+    max-height: 150px;
+}
+footer ul li a{
+  color: var(--secondary-color);
+}
+footer ul li a:hover{
+  color: #585858;
+}
+footer ul.d-flex li a{
+  width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer ul.d-flex li a i{
+  font-size: 25px;
+}
+
+
+
+.work{
+    width: 100%;
+    position: relative;
+}
+.work > .workText{
+    position: absolute;
+    top: 85px;
+}
+.project1 .work > .workText h1{
+    background: rgba(0, 0, 0, 0.2);
+    padding: 3px 20px;
+}
+.project1 .work > .workText a{
+    color: #a4081f;
+}
+.project2 .work > .workText a{
+    color: #29c65a;
+}
+.project1 .work > .workText a h5{
+    font-weight: 600;
+
+}
+.project2 .work > .workText a h5{
+    font-weight: 600;
+    color: #29c65a;
+}
+.project2 .work > .workText h1{
+    background: rgba(0, 0, 0, 0.2);
+    padding: 3px 20px;
+}
+.project1 .work > .workText > .underline{
+    display: block;
+    background: #a4081f;
+    height: 3px;
+    width: 61px;
+    margin-top: 5px;
+}
+.project2 .work > .workText > .underline{
+    display: block;
+    background: #9a6a28;
+    height: 3px;
+    width: 61px;
+    margin-top: 5px;
+}
+.work > .workImg{
+    width: 85%;
+    float: right;
+    -webkit-box-shadow: 0 3px 70px 0px rgba(23,30,36,0.06);
+    -moz-bx-shadow: 0px 3px 70px 0px rgba(23,30,36,0.06);
+    box-shadow: 0 3px 70px 0px rgba(23,30,36,0.6);
+}
+.work ul{
+    position: absolute;
+    bottom: 0;
+    right: 86%;
+}
+.work ul li{
+    margin-top: 20px;
+}
+.btnSiteHome{
+    border: solid 2px white;
+    color: white;
+    padding: 0.6rem 3rem;
+    text-transform: uppercase;
+
+}
+
+
+
+.project, .post { 
+    position: relative; 
+    float: left; 
+    width: 100%; 
+    margin-bottom: 30px; 
+}
+
+.project figure,
+ .post figure { 
+    margin: 0; 
+    position: relative; 
+}
+
+.project .project-hover, 
+.project .post-hover, 
+.post .project-hover, 
+.post .post-hover { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    background: #feef00f2;
+    visibility: hidden; 
+    opacity: 0; 
+    -webkit-transition: .3s all ease; 
+    -o-transition: .3s all ease; 
+    transition: .3s all ease; 
+}
+
+.project .project-hover .project-hover-inner, 
+.project .project-hover .post-hover-inner, 
+.project .post-hover .project-hover-inner, 
+.project .post-hover .post-hover-inner, 
+.post .project-hover .project-hover-inner, 
+.post .project-hover .post-hover-inner, 
+.post .post-hover .project-hover-inner, 
+.post .post-hover .post-hover-inner { 
+    position: absolute; 
+    z-index: 99; 
+    left: 50%; 
+    top: 50%; 
+    visibility: hidden; 
+    opacity: 0; 
+    -webkit-transition: .3s all ease; 
+    -o-transition: .3s all ease; 
+    transition: .3s all ease; 
+    -webkit-transform: translate(-50%, -50%); 
+    -ms-transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%); 
+    transition: .3s all ease; 
+    text-align: center; 
+}
+
+.project .project-hover .project-hover-inner h2, 
+.project .project-hover .post-hover-inner h2, 
+.project .post-hover .project-hover-inner h2, 
+.project .post-hover .post-hover-inner h2, 
+.post .project-hover .project-hover-inner h2, 
+.post .project-hover .post-hover-inner h2, 
+.post .post-hover .project-hover-inner h2, 
+.post .post-hover .post-hover-inner h2 { 
+    color: #000; 
+    font-size: 30px; 
+    line-height: 1.2; 
+    -webkit-transition: .3s all ease; 
+    -o-transition: .3s all ease; 
+    transition: .3s all ease; 
+    opacity: 0; 
+    visibility: hidden; 
+    position: relative; 
+    bottom: -30px; 
+    text-transform: none;
+}
+
+.project .project-hover .project-hover-inner span, 
+.project .project-hover .post-hover-inner span, 
+.project .post-hover .project-hover-inner span, 
+.project .post-hover .post-hover-inner span, 
+.post .project-hover .project-hover-inner span, 
+.post .project-hover .post-hover-inner span, 
+.post .post-hover .project-hover-inner span, 
+.post .post-hover .post-hover-inner span { 
+    color: rgba(0, 0, 0, 0.8); 
+    opacity: 0; 
+    visibility: hidden; 
+    position: relative; 
+    bottom: -30px; 
+    -webkit-transition: .5s all ease; 
+    -o-transition: .5s all ease; 
+    transition: .5s all ease; 
+}
+
+.project:hover .project-hover, 
+.project:hover .post-hover, 
+.project:focus .project-hover, 
+.project:focus .post-hover, 
+.post:hover .project-hover, 
+.post:hover .post-hover, 
+.post:focus .project-hover, 
+.post:focus .post-hover { 
+    visibility: visible; 
+    opacity: 1; 
+}
+
+.project:hover .project-hover .project-hover-inner, 
+.project:hover .project-hover .post-hover-inner, 
+.project:hover .post-hover .project-hover-inner, 
+.project:hover .post-hover .post-hover-inner, 
+.project:focus .project-hover .project-hover-inner, 
+.project:focus .project-hover .post-hover-inner, 
+.project:focus .post-hover .project-hover-inner, 
+.project:focus .post-hover .post-hover-inner, 
+.post:hover .project-hover .project-hover-inner, 
+.post:hover .project-hover .post-hover-inner, 
+.post:hover .post-hover .project-hover-inner, 
+.post:hover .post-hover .post-hover-inner, 
+.post:focus .project-hover .project-hover-inner, 
+.post:focus .project-hover .post-hover-inner, 
+.post:focus .post-hover .project-hover-inner, 
+.post:focus .post-hover .post-hover-inner { 
+    visibility: visible; 
+    opacity: 1; 
+    -webkit-animation-delay: 10s; 
+    animation-delay: 10s; 
+}
+
+.project:hover .project-hover .project-hover-inner h2, 
+.project:hover .project-hover .post-hover-inner h2, 
+.project:hover .post-hover .project-hover-inner h2, 
+.project:hover .post-hover .post-hover-inner h2, 
+.project:focus .project-hover .project-hover-inner h2, 
+.project:focus .project-hover .post-hover-inner h2, 
+.project:focus .post-hover .project-hover-inner h2, 
+.project:focus .post-hover .post-hover-inner h2, 
+.post:hover .project-hover .project-hover-inner h2, 
+.post:hover .project-hover .post-hover-inner h2, 
+.post:hover .post-hover .project-hover-inner h2, 
+.post:hover .post-hover .post-hover-inner h2, 
+.post:focus .project-hover .project-hover-inner h2, 
+.post:focus .project-hover .post-hover-inner h2, 
+.post:focus .post-hover .project-hover-inner h2, 
+.post:focus .post-hover .post-hover-inner h2 { 
+    opacity: 1; 
+    visibility: visible; 
+    bottom: 0px; 
+}
+
+.project:hover .project-hover .project-hover-inner span, 
+.project:hover .project-hover .post-hover-inner span, 
+.project:hover .post-hover .project-hover-inner span, 
+.project:hover .post-hover .post-hover-inner span, 
+.project:focus .project-hover .project-hover-inner span, 
+.project:focus .project-hover .post-hover-inner span, 
+.project:focus .post-hover .project-hover-inner span, 
+.project:focus .post-hover .post-hover-inner span, 
+.post:hover .project-hover .project-hover-inner span, 
+.post:hover .project-hover .post-hover-inner span, 
+.post:hover .post-hover .project-hover-inner span, 
+.post:hover .post-hover .post-hover-inner span, 
+.post:focus .project-hover .project-hover-inner span, 
+.post:focus .project-hover .post-hover-inner span, 
+.post:focus .post-hover .project-hover-inner span, 
+.post:focus .post-hover .post-hover-inner span { 
+    bottom: 0; 
+    visibility: visible; 
+    opacity: 1; 
+}
+
+
+@media (max-width: 576px) { 
+  header .header .content h1{
+    font-size: 2em;
+  }
+  section.servicos::before{
+    width: 0%;
+  }
+  .navbar-b .navbar-brand img{
+    width: 100px !important;
+  }
+  section.quem-somos{
+    text-align: center;
+    padding: 5rem 0;
+  }
+  footer ul.d-flex{
+    justify-content: center;
+  }
+}

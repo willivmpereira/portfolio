@@ -1,0 +1,10 @@
+Sitemap: https://williamportfolio.com.br/sitemap.xml
+
+User-agent: *
+Allow: /
+Disallow: /system/
+Disallow: /cgi-bin/
+Disallow: resposta-formulario.html
+Disallow: 404.html
+Disallow: briefing.html
+

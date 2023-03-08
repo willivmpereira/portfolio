@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>App listagem</title>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="navbar_content">
+                <div class="logo">
+                    <h1>Foco</h1>
+                </div>
+                <ul>
+                    <li><a href="index.html">Cadastrar</a></li>
+                    <li><a href="users.html">Listar</a></li>
+                </ul>
+                <div class="btnDark">
+                    <i class="fa fa-moon-o" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="tabela">
+        <div class="container">
+            <h1>Usuários</h1>
+            <p>Listagem de todos os usuários cadastrados</p>
+
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>CPF</th>
+                            <th>Telefone</th>
+                            <th>Email</th>
+                            <th>CEP</th>
+                            <th>Logradouro</th>
+                            <th>Bairro</th>
+                            <th>Cidade</th>
+                            <th>Estado</th>
+                            <th>Função</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                        
+                    </tbody>
+                </table>
+            </div>
+    </section>
+
+    <script src="users.js"></script>
+</body>
+</html>

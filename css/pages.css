@@ -1,0 +1,21 @@
+.header-pages{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(../img/bgProjects.svg) !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.header-pages h2{
+    font-size: 3em;
+    color: #dcdcdc;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.header-pages h2 span{
+    color: #fc466b;
+}

@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700&display=swap');
+
+nav{
+    background-color: black;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color: white;
+}
+nav.black{
+    background: rgb(0, 0, 0);
+    transition: .5s;
+}
+
+section{
+    margin-top: 15em;
+}
+
+.btn-custonyellow1{
+    border: 2px solid #FFBB00;
+    background: transparent;
+    color: #FFBB00;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.btn-custonyellow2{
+    border: none;
+    background: #FFBB00;
+    color: white;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.btn-custonblue1{
+    border: 2px solid #23aad3;
+    background: transparent;
+    color: #23aad3;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.btn-custonblue2{
+    border: none;
+    background: #23aad3;
+    color: white;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-custongreen1{
+    border: 2px solid #29c65a;
+    background: transparent;
+    color: #29c65a;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.btn-custongreen2{
+    border: none;
+    background: #29c65a;
+    color: white;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.btn-custonblue11{
+    border: 2px solid #68a4ff;
+    background: transparent;
+    color: #68a4ff;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-custonblue22{
+    border: none;
+    background: #68a4ff;
+    color: white;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-custonorange1{
+    border: 2px solid #d77761;
+    background: transparent;
+    color: #d77761;
+}
+.btn-custongray1{
+    border: 2px solid #cccccc;
+    background: transparent;
+    color: #cccccc;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.btn-custonorange2{
+    border: none;
+    background: #d77761;
+}
+.btn-custongray{
+    border: none;
+    background: #cccccc;
+    color: white;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.mt-100{
+    margin-top: 100px;
+}
+.mb-100{
+    margin-bottom: 100px;
+}
+.fab{
+    color: #FFBB00;
+}
+footer{
+    background-color: black;
+}
+
+@media (max-width: 575.98px) { 
+    .title{
+        margin-top: 25px;
+        text-align: center;
+    }
+    .buton{
+        display: flex;
+        justify-content: center;
+    }
+    .buton a{
+        margin: 5px;
+    }
+    .buton a button{
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {  }
+
+
+@media (min-width: 768px) and (max-width: 991.98px) { }
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) { }
+
+
+@media (min-width: 1200px) {  }

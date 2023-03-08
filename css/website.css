@@ -1,0 +1,229 @@
+.navbar{
+    background: black;
+}
+
+/* .card{
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+.rgba-black-strong{
+    background-color: rgba(0,0,0,.7);
+}
+.container{
+    margin-top: 8%;
+}
+.inner{
+    overflow: hidden;
+}
+.inner img{
+    transition: all 1.5s ease;
+}
+.inner:hover img{
+    transform: scale(1.5);
+}
+.card a{
+    margin: 15px 0 0;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: #333;
+    padding: 5px;
+    border: 1px solid #333;
+    border-radius: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 5px 20px 5px 20px;
+}
+.card a:hover{
+    background: #333;
+    color: #fff;
+} */
+
+/* section a{
+    padding: 0.3rem 1rem;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    color: black;
+    border: solid 2px #000;
+} */
+footer{
+    background: black;
+}
+footer a{
+    color: rgba(255, 187, 0, 1);
+}
+.website1 .img-content .owl-wrapper-outer, .website2 .img-content .owl-wrapper-outer, .website3 .img-content .owl-wrapper-outer, .website4 .img-content .owl-wrapper-outer{
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.2);
+}
+.website1 .btnView a:nth-child(1){
+    border: solid 2px #c00218;
+    background: #c00218;
+    padding: 0.4rem 2rem;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 600;
+}
+.website1 .btnView a:nth-child(2){
+    border: solid 2px #c00218;
+    padding: 0.4rem 2rem;
+    color: #c00218;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.website2 .btnView a:nth-child(1){
+    border: solid 2px #29c65a;
+    background: #29c65a;
+    padding: 0.4rem 2rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 600;
+}
+.website2 .btnView a:nth-child(2){
+    border: solid 2px #29c65a;
+    padding: 0.4rem 2rem;
+    color: #29c65a;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.website3 .btnView a:nth-child(1){
+    border: solid 2px #094673;
+    background: #094673;
+    padding: 0.4rem 2rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 600;
+}
+.website3 .btnView a:nth-child(2){
+    border: solid 2px #094673;
+    padding: 0.4rem 2rem;
+    color: #094673;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.website4 .btnView a:nth-child(1){
+    border: solid 2px #f5842f ;
+    background: #f5842f ;
+    padding: 0.4rem 2rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 600;
+}
+.website4 .btnView a:nth-child(2){
+    border: solid 2px #f5842f ;
+    padding: 0.4rem 2rem;
+    color: #f5842f ;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.svg-logo{
+    max-width: 200px !important;
+    max-height: 101px !important;
+}
+
+
+
+
+
+
+@media (max-width: 576px) {  
+    .website1 .desc{
+        margin-top: 2rem;
+    }
+    .website1 .desc .logo{
+        display: flex;
+        justify-content: center;
+    }
+    .website1 .desc p{
+        text-align: center;
+    }
+    .website1 .desc .btnView{
+        display: flex;
+        justify-content: center;
+    }
+
+    .website2 .desc{
+        margin-top: 2rem;
+    }
+    .website2 .desc .logo{
+        display: flex;
+        justify-content: center;
+    }
+    .website2 .desc p{
+        text-align: center;
+    }
+    .website2 .desc .btnView{
+        display: flex;
+        justify-content: center;
+    }
+
+    .website3 .desc{
+        margin-top: 2rem;
+    }
+    .website3 .desc .logo{
+        display: flex;
+        justify-content: center;
+    }
+    .website3 .desc p{
+        text-align: center;
+    }
+    .website3 .desc .btnView{
+        display: flex;
+        justify-content: center;
+    }
+
+    .website4 .desc{
+        margin-top: 2rem;
+    }
+    .website4 .desc .logo{
+        display: flex;
+        justify-content: center;
+    }
+    .website4 .desc p{
+        text-align: center;
+    }
+    .website4 .desc .btnView{
+        display: flex;
+        justify-content: center;
+    }
+
+    .website5.desc{
+        margin-top: 2rem;
+    }
+    .website5 .desc .logo{
+        display: flex;
+        justify-content: center;
+    }
+    .website5 .desc p{
+        text-align: center;
+    }
+    .website5 .desc .btnView{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 768px) {  }
+
+@media (min-width: 992px) {  }
+
+@media (min-width: 1200px) {  }

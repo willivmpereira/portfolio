@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>App listagem</title>
+</head>
+<body>
+        <nav>
+            <div class="container">
+                <div class="navbar_content">
+                    <div class="logo">
+                        <h1>Foco</h1>
+                    </div>
+                    <ul>
+                        <li><a href="index.html">Cadastrar</a></li>
+                        <li><a href="users.html">Listar</a></li>
+                    </ul>
+                    <div class="btnDark">
+                        <i class="fa fa-moon-o" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section>
+            <div class="container">
+                <h1>Cadastro de novo usuário</h1>
+                <p>Preencha o formulário para cadastrar novo usuário</p>
+    
+                <div class="indicador">
+                    <p class="indicador_one active">
+                        1. Dados pessoais
+                    </p>
+                    <p class="indicador_two">
+                        2. Endereço
+                    </p>
+                </div>
+                <form action="" id="form">
+                    
+
+                    <div class="page_one">
+                        
+
+                        <div class="form_groups">
+                            <div class="form_group">
+                                <label for="nome">Nome Completo *</label>
+                                <input type="text" id="name" name="nome" placeholder="Nome Completo">
+                            </div>
+                            <div class="form_group">
+                                <label for="logradouro">CPF *</label>
+                                <input type="text"  id="cpf" name="cpf" maxlength="11" placeholder="00000000000">
+                            </div>
+                        </div>
+                        <div class="form_groups">
+                            <div class="form_group">
+                                <label for="bairro">Telefone *</label>
+                                <input type="text"  id="phone" name="telefone" placeholder="00 000000000">
+                            </div>
+                            <div class="form_group">
+                                <label for="complemento">E-mail</label>
+                                <input type="mail" placeholder="email@email.com" id="email" name="email">
+                            </div>
+                        </div>
+
+                        <div class="buttons">
+                            <button type="button" id="btnNext">Próximo</button>
+                        </div>
+                    </div>
+                    
+    
+                    <div class="page_two">
+                        <div class="form_groups">
+                            <div class="form_group">
+                                <label for="cep">CEP *</label>
+                                <input type="text" id="cep" name="cep" maxlength="8" placeholder="00000000">
+                            </div>
+                            <div class="form_group">
+                                <label for="logradouro">Endereço *</label>
+                                <input type="text" placeholder="Rua a" id="logradouro" name="logradouro">
+                            </div>
+                        </div>
+                        <div class="form_groups">
+                            <div class="form_group">
+                                <label for="bairro">Bairro *</label>
+                                <input type="text" placeholder="Jardins" id="bairro" name="bairro">
+                            </div>
+
+                            <div class="form_group">
+                                <label for="localidade">Cidade *</label>
+                                <input type="text" placeholder="São Paulo" id="localidade" name="localidade">
+                            </div>
+                            <div class="form_group">
+                                <label for="uf">Estado *</label>
+                                <input type="text" placeholder="SP" id="uf" name="uf">
+                            </div>
+                        </div>
+
+                        <div class="buttons">
+                            <a id="btnPrev">Anterior</a>
+                            <button type="submit" class="btn" id="enviar">Enviar</button>
+                        </div>
+                    </div>
+    
+                    
+                </form>
+                
+            
+    
+            <table id="tabela"></table>
+    
+            </div>
+
+            <div class="alertRed" id="alertCampos">
+                <h4>Preencha todos os campos!</h4>
+                <span class="close_btn" id="closeBtn"><i class="fa fa-times" aria-hidden="true"></i>
+                </span>
+            </div>
+
+            <div class="alertGreen" id="alertCadastro">
+                <h4>Cadastrado com sucesso!</h4>
+                <span class="close_btn" id="closeBtn"><i class="fa fa-times" aria-hidden="true"></i>
+                </span>
+            </div>
+        </section>
+
+        
+    
+        <section class="tabela" style="display: none;">
+            <div class="container">
+                <h1>Usuários</h1>
+                <p>Listagem de todos os usuários cadastrados</p>
+    
+                <div>
+                    <table>
+                        <thead>
+                            <tr>
+                                
+                                <th>Nome</th>
+                                <th>CPF</th>
+                                <th>Telefone</th>
+                                <th>Email</th>
+                                <th>CEP</th>
+                                <th>Logradouro</th>
+                                <th>Bairro</th>
+                                <th>Cidade</th>
+                                <th>Estado</th>
+                                <th>Função</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody">
+                            
+                        </tbody>
+                    </table>
+                </div>
+        </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

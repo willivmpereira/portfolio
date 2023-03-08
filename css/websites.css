@@ -1,0 +1,30 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    background: #fafafa;
+}
+header{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header.pediatria{
+    background-image: url(../img/mockup-pediatria.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+header.pediatria h1{
+    font-weight: bold;
+    color: #05e1ff;
+}
+header.pediatria .content{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+header.pediatria .content img{
+    height: 500px;
+    
+}

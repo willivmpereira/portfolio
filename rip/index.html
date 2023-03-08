@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Smiles</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <script src="https://unpkg.com/moment@2.18.1"></script>
+    <script src="https://unpkg.com/moment-precise-range-plugin@1.2.3"></script>
+    
+    <!-- <div class="smiles">
+        <img src="smile.png" alt="" class="rotate">
+    </div> -->
+
+
+
+    
+    <div class="content">
+        <div class="counter">
+            <input class="date" type="date" value="2025-10-09"/>
+            <input class="time" type="time" value="00:00"/>
+            <span class="js-display-difference"></span> 
+            <h5>To R.I.P</h5>
+       
+        </div>
+    </div>
+
+    <!-- <audio controls loop autoplay style="display: none;">
+        <source src="allsmiles.mp3" type="audio/mp3">
+    </audio> -->
+    
+     
+
+
+        <script>
+            function calculateDifference(thenString) {
+                var m1 = moment(Date.now())
+                var m2 = moment(new Date(thenString))
+                var diff = moment.preciseDiff(m1, m2)
+            return diff
+            }
+
+            function displayDifference() {
+            displayBox.textContent = calculateDifference(dateInput.value + ", " + timeInput.value)
+            }
+
+            const dateInput = document.querySelector(".date")
+            const timeInput = document.querySelector(".time")
+            const displayBox = document.querySelector(".js-display-difference")
+            dateInput.addEventListener("change", displayDifference)
+            timeInput.addEventListener("change", displayDifference)
+            displayDifference()
+            setInterval(displayDifference, 1000)
+        </script>
+
+
+
+    </body>
+</body>
+</html>

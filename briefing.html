@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/briefing.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+
+
+        <!-- FavIcon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+        <link rel="manifest" href="icon/site.webmanifest">
+        <link rel="mask-icon" href="icon/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+    
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G1ZX3WVEKQ"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-G1ZX3WVEKQ');
+    </script>
+
+    <title>Brienf - William Portfolio</title>
+  </head>
+  <body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h1 class="text-light" data-aos="fade-up" data-aos-duration="1000">Bem-vindo<br>ao<br><span>Briefing</span></h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 offset-lg-6">
+                    <div class="content" data-aos="fade-up" data-aos-duration="1000">
+                        <h2 class="text-light">Fique a vontade para expor todas as suas ideias</h2>
+                    <p class="text-light">O briefing é um conjunto de informações para auxiliar em nossos projetos, com esta coleta de dados podemos mapear melhor suas expectativas.<br>
+                        É uma peça fundamental para a elaboração de uma proposta comercial, e o planejamento de todas as etapas de desenvolvimento de acordo com as necessidades do cliente.</p>
+                    <ul>
+                        <li><a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                        <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a href=""><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <form action="system/enviarBriefing.php" method="GET" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="group1">
+                                <div class="form-group mb-4">
+                                    <label>Nome</label>
+                                    <input type="text" name="nome" class="form-control" required>
+                                </div>
+                                <div class="form-group mb-4">
+                                    <label>E-mail</label>
+                                    <input type="email" name="email" class="form-control" required>
+                                </div>
+                                <div class="form-group mb-4">
+                                    <label>Nome da empresa</label>
+                                    <input type="text" name="nome_empresa" class="form-control" required>
+                                </div>
+                                <div class="form-group mb-4">
+                                    <label>Telefone</label>
+                                    <input type="tel" name="telefone" class="form-control input" onkeypress="$(this).mask('(00) 00000-0000')" required>
+                                </div>
+                            </div>
+                            
+
+                            <div class="group2 mt-5">
+                                <div class="input-div one">
+                                    <div class="div">
+                                        <h5>Qual é o nicho de atuação da sua empresa?</h5>
+                                        <input type="text" name="nicho" class="input">
+                                    </div>
+                                </div>
+    
+                                <div class="input-div one">
+                                    <div class="div">
+                                        <h5>A quanto tempo sua empresa está no mercado?</h5>
+                                        <input type="text" name="tempo_mercado" class="input">
+                                    </div>
+                                </div>
+
+                                <div class="input-div one">
+                                    <div class="div">
+                                        <h5>Conte um pouco sobre sua empresa:</h5>
+                                        <input type="text" name="sobre_empresa" class="input">
+                                    </div>
+                                </div>
+    
+                                <div class="input-div one">
+                                    <div class="div">
+                                        <h5 id="t40">Conte um pouco sobre seu público alvo(gênero, idade, etc.):</span></h5>
+                                        <input type="text"  name="publico_alvo" class="input">
+                                    </div>
+                                </div>
+
+                                <div class="input-div one">
+                                    <div class="div">
+                                        <h5>Já possui site? Se sim, qual?</h5>
+                                        <input type="text" name="site" class="input">
+                                    </div>
+                                </div>
+
+                                <div class="one mb-5 mt-5">
+                                    <div class="div">
+                                        <h5>Já possui uma identidade visual ou logotipo?</h5>
+                                        <div>
+                                            <input type="radio" id="logo_sim" name="logotipo_sim" value="logo_sim">
+                                            <label for="logo_sim">Sim</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" id="nao" name="logotipo_nao" value="nao">
+                                            <label for="nao">Não</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" id="nao_mas_cria" name="logotipo_na_mas_sim" value="nao_mas_cria">
+                                            <label for="nao_mas_cria">Não, mas desejo criar uma.</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="input-div one">
+                                    <div class="div">
+                                        <h5>Qual é o objetivo do site?</h5>
+                                        <input type="text" name="objetivo" class="input">
+                                    </div>
+                                </div>
+
+                                <div class="input-div one">
+                                    <div class="div">
+                                        <h5>Possui alguma referência de sites que te inspiram?</h5>
+                                        <input type="text" name="referencia" class="input">
+                                    </div>
+                                </div>
+
+                                <div class="input-div one">
+                                    <div class="div">
+                                        <h5>Possuiu alguma preferência de cores?</h5>
+                                        <input type="text" name="cores" class="input">
+                                    </div>
+                                </div>
+                                <div class="input-div one">
+                                    <div class="div">
+                                        <h5>Existe alguma cor que não queira?</h5>
+                                        <input type="text" name="cores_nao" class="input">
+                                    </div>
+                                </div>
+
+                                
+                                
+                                <div class="one mt-5 mb-5">
+                                    <div class="div">
+                                        <h5>Características da sua marca<br><span>*Selecione até 3 opções</span></h5>
+                                        <div class="d-flex">
+                                            <div class=".">
+                                                <div>
+                                                    <input type="checkbox" id="moderna" name="site_moderno" value="moderna">
+                                                    <label for="moderna">Moderna</label>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" id="seria" name="site_serio" value="seria">
+                                                    <label for="seria">Séria</label>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" id="extrovertida" name="site_extrovestido" value="extrovertida">
+                                                    <label for="extrovertida">Extrovertida</label>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" id="conservadora" name="site_conservador" value="conservadora">
+                                                    <label for="conservadora">Conservadora</label>
+                                                </div>
+                                            </div>
+                                            <div class=".">
+                                                
+                                                <div>
+                                                    <input type="checkbox" id="divertida" name="site_divertido" value="divertida">
+                                                    <label for="divertida">Divertida</label>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" id="elegante" name="site_elegabte" value="elegante">
+                                                    <label for="elegante">Elegante</label>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" id="nerd/geek" name="site_nerde" value="nerd/geek">
+                                                    <label for="nerd/Geek">Nerd/Geek</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="input-div one">
+                                    <div class="div">
+                                        <h5>Deseja acrescentar mais alguma informação?</h5>
+                                        <input type="text" name="acrescentar" class="input">
+                                    </div>
+                                </div>
+                            </div>
+                            <input name="submit" type="submit" class="btn bnt-lg butt" onclick="return validar" value="Enviar">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="assets/briefing_main.js"></script>
+
+    <!-- Formatação telefone -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script> 
+
+
+
+  </body>
+</html>
